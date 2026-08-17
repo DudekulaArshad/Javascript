@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+ <!-- 
+    DOM - DOCUMENT OBJECT MODEL
+
+    is a structured representation of a web page that allows developers to access,modify
+    and control and structure using javascript
+    
+    the html document object model (dom) is a tree structure where each html
+    tag becomes a node in the hieraachy
+    
+  -->
+<!--  
+  Methods
+
+  getElementByid()
+  getElementByClassName()
+  getElementByTagName()
+  querySelector()
+  querySelectorALL()
+
+-->
+
+<p id="a"> Arshad Dudekula </p>
+<script>
+    // document.getElementById("a").innerHTML="parth";
+    //document.getElementById("a").textContent="Arshad Dudekula";
+   document.getElementById("a").innerText="charan Teja";
+    
+</script>
+<p class="demo">hello</p>
+<p class="demo">welcome</p>
+<script>
+    document.getElementsByClassName("demo")[0].innerHTML="vastuna";
+    document.getElementsByClassName("demo")[1].innerHTML="vastuna";
+</script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+  <center><h2>Login</h2></center>
+  <center>
+  Email: <br><input type="email" id ="a" placeholder="Email"> <br><br>
+  Password: <br><input type="password" id="b" placeholder="Password"> <br><br>
+   Conform Password: <br><input type="password" id="c" placeholder=" Conform Password"> <br><br>
+   <button onclick="login()">login</button>
+   
+   
+   </center>
+   <script>
+  function login()
+  {
+    var email=document.getElementById("a");
+     var password=document.getElementById("b");
+      var confirmpassword=document.getElementById("c")
+
+
+      if (email === "" && password === "" && confirmpassword === "")
+      {
+        alert("Please enter all.");
+        return;
+      }
+      if(password !==confirmpassword)
+      {
+        alert("Passwords are not mathced");
+        return;
+      }
+      
+  
+}
+   </script>
+
+
+</body>
+</html>
